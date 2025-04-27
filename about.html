@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mondy - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-bebas { font-family: 'Bebas Neue', cursive; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        #mobile-menu { transition: all 0.3s ease-out; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+        }
+        h1, h2, h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1.5px;
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur-sm transition-all duration-300" id="navbar">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="index.html" class="text-white font-bebas text-3xl">MONDY</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8" id="Home">
+                <a href="index.html" class="text-white hover:text-red-500 transition-colors">Home</a>
+                <a href="shop.html" class="text-white hover:text-red-500 transition-colors">Shop</a>
+                <a href="about.html" class="text-white hover:text-red-500 transition-colors">About</a>
+                <a href="contact.html" class="text-white hover:text-red-500 transition-colors">Contact</a>
+                <a href="#" class="hover:text-red-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </a>                </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-black/95">
+        <div class="px-4 py-4 space-y-4">
+            <a href="index.html" class="block text-white hover:text-red-500">Home</a>
+            <a href="shop.html" class="block text-white hover:text-red-500">Shop</a>
+            <a href="about.html" class="block text-white hover:text-red-500">About</a>
+            <a href="contact.html" class="block text-white hover:text-red-500">Contact</a>
+            <a href="#" class="block text-white hover:text-red-500">Cart</a>
+        </div>
+    </div>
+</nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-black z-20 opacity-0 transition-opacity duration-300">
+        <div class="flex flex-col items-center justify-center h-full">
+            <a href="index.html" class="text-2xl py-2 hover:text-red-500">Home</a>
+            <a href="shop.html" class="text-2xl py-2 hover:text-red-500">Shop</a>
+            <a href="about.html" class="text-2xl py-2 hover:text-red-500">About</a>
+            <a href="contact.html" class="text-2xl py-2 hover:text-red-500">Contact</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-8">About Mondy</h1>
+            <p class="text-lg text-gray-400">Mondy is an American urban streetwear brand that specializes in high-quality sweatshirts. We are committed to providing our customers with comfortable, stylish, and durable clothing that reflects their unique sense of style.</p>
+            <p class="text-lg text-gray-400 mt-4">Our mission is to create clothing that not only looks good but also feels good to wear. We use only the finest materials and construction techniques to ensure that our sweatshirts are built to last.</p>
+            <p class="text-lg text-gray-400 mt-4">We are passionate about streetwear culture and are constantly inspired by the creativity and innovation of the urban landscape. Our designs reflect this passion and are intended to empower our customers to express their individuality.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <p class="text-gray-400">© 2025 Mondy .Made it by Ali Emad Saad.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-red-500">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-red-500">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
